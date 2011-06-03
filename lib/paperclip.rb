@@ -255,7 +255,7 @@ module Paperclip
         attachment.send(:flush_errors)
       end
 
-      #setup_file_columns(name) if options[:storage] == :database
+      setup_file_columns(name) if options[:storage] == :database
     end
 
     # Places ActiveRecord-style validations on the size of the file assigned. The
